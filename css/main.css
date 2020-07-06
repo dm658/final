@@ -1,0 +1,153 @@
+/* DEVELOPER: Deanna Mostafa, IS117-450, Summer 2020 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Resolution CSS */
+
+html {
+    padding-bottom: 50px;
+}
+
+html, div.container-fluid {
+    background-color: #e8e8e8;
+}
+
+header {
+    padding-bottom: 10px;
+}
+
+
+nav h1 {
+    color: rgba(255,255,255, 1.0);
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+}
+
+a.dropdown-item {
+    background-color: #343a40;
+    color: white;
+}
+
+a.dropdown-item:hover {
+    background-color: #6f7f8f;
+    color: white;
+}
+
+div p{
+    word-wrap: break-word;
+}
+
+section {
+    float: left;
+}
+
+aside {
+    float: right;
+}
+
+/*
+.caro-clip {
+    clip: rect(0px, 500px, 320px, 0px);
+}*/
+
+.carousel-item.active img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+a.carousel-control-prev, a.carousel-control-next {
+    background-color: black;
+}
+
+.card {
+    position: relative;
+    height: 500px;
+    width: 400px;
+}
+
+div.card.about {
+    width: 100%;
+}
+
+.spacer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+/* tablet portrait layout (768px to 960px) */
+@media only screen and (max-width: 960px) {
+
+    div.row {
+        width: 99%;
+        max-width: 960px;
+    }
+
+    header {
+        width: 100%; /* 800 ÷ 960 x 100 */
+    }
+
+    section {
+        float: left;
+        width: 41.458%
+    }
+
+    aside {
+        float: right;
+        width: 58.542%; /* 235 ÷ 960 x 100 */
+    }
+
+    footer {
+        width: 100%; /* 930 ÷ 960 x 100 */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    header img {
+        float: none;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    div.card {
+        float: none;
+    }
+
+    section h1 {
+        font-size: 135%;
+    }
+    section {
+        float: none;
+    }
+
+    aside {
+        clear: both;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+    * {
+        font-size: 90%;
+    }
+}
